@@ -18,7 +18,7 @@ function getMinimumDifference(a, b) {
             ans.push(count);
         }
     }
-
+    console.log(ans);
     return ans;
 }
 
