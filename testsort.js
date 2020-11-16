@@ -1,5 +1,5 @@
 function test(array) {
-    array.sort();
+    array.sort((a,b) => a - b);
     return array;
 }
 
