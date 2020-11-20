@@ -53,12 +53,12 @@ let test = new BST(100);
 test.insert(200);
 test.insert(300);
 test.insert(150);
-// test.insert(120);
+test.insert(100);
 test.insert(20);
 test.insert(30);
 test.insert(10);
 // test.insert(5);
-console.log(test.check(test));
+// console.log(test.check(test));
 // test.printNodes(test);
 console.log(test);
 
