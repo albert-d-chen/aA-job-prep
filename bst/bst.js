@@ -23,18 +23,18 @@ class BST {
     }
 
     check(root) {
-        // if (root === null) return 0;
-        // if (root.left === null && root.right === null) {
-        //     return 1;
-        // } else {
-        //     return this.check(root.right) + this.check(root.left);
-        // }
-        if (!root) return 0;
-        if (!root.left && !root.right) {
+        if (root === null) return 0;
+        if (root.left === null && root.right === null) {
             return 1;
         } else {
             return this.check(root.right) + this.check(root.left);
         }
+        // if (!root) return 0;
+        // if (!root.left && !root.right) {
+        //     return 1;
+        // } else {
+        //     return this.check(root.right) + this.check(root.left);
+        // }
     }
 
     printNodes(root) {
@@ -57,8 +57,8 @@ test.insert(100);
 test.insert(20);
 test.insert(30);
 test.insert(10);
-// test.insert(5);
-// console.log(test.check(test));
-// test.printNodes(test);
+test.insert(5);
+console.log(test.check(test));
+test.printNodes(test);
 console.log(test);
 
