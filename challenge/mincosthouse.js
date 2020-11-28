@@ -8,3 +8,6 @@ function min(cost) {
     let n = cost.length;
     return Math.min(cost[n-1][0], Math.min(cost[n-1][1],cost[n-1][2]) );
 }
+
+let cost = [[1,2,3],[3,2,1],[2,1,3]]
+console.log(min(cost))
