@@ -1,5 +1,4 @@
 var removeKdigits = function(num, k) {
-    
     if (num.length === k) return '0';
     
     let nums = [];
@@ -32,3 +31,5 @@ var removeKdigits = function(num, k) {
     
     
 };
+
+console.log(removeKdigits('32345', 2))
