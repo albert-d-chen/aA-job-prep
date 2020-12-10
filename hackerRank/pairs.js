@@ -4,4 +4,4 @@ function pairs(nums) {
     return compliment;
 }
 
-console.log(pairs(60))
+console.log(pairs(60));
