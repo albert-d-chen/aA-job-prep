@@ -13,22 +13,6 @@ const racer = function () {
     console.log('current')
 }
 
-const racer1 = function () {
-    setTimeout(() => console.log('time'), 0);
-    setImmediate(() => console.log('immd'));
-    process.nextTick(() => console.log('tick'));
-}
-const racer2 = function () {
-    process.nextTick(() => console.log('tick'));
-    setTimeout(() => console.log('time'), 0);
-    setImmediate(() => console.log('immd'));
-}
-const racer3 = function () {
-    setImmediate(() => console.log('immd'));
-    process.nextTick(() => console.log('tick'));
-    setTimeout(() => console.log('time'), 0);
-}
-
 racer1();
 racer2();
 racer3();
