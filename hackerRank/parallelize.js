@@ -8,19 +8,11 @@ function minTime(files, numCores, limit) {
     let sortedFiles = files.sort((a,b) => b - a);
     let limitCopy = limit;
 
-    
-
     while (limitCopy > 0) {
         for (let i = 0; i < sortedFiles.length; i++) {
 
         }
     }
-
-
-
-
-
-
     let array = []
     for (let i = 0; i < files.length; i++) {
         array[i] = new Array(files.length).fill(0);
