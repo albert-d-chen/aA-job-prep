@@ -34,3 +34,7 @@ var sumZero = function(n) {
 
 let n = 3;
 console.log(sumZero(n));
+
+//let res = (n % 2 == 0) ? [] : [0];
+// for (let i = 1; i <= Math.floor(n/2); i++) res.push(i,-i);
+// return res;
