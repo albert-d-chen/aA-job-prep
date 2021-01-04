@@ -35,4 +35,5 @@ function palindrome (string) {
 //if even length, letters have to be even count
 //if odd length, have to be even count but 1
 let s = 'car raceefg';
+
 console.log(palindrome(s));
