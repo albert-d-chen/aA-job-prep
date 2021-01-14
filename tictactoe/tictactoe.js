@@ -8,7 +8,7 @@ function combinations () {
 
     for (let i = 0; i < board.length; i++) {
         board[i][0] = 'X';
-        fill(board, count, 'O');
+        count += fill(board, count, 'O');
         board = [
             [], [], [],
             [], [], [],
@@ -68,6 +68,8 @@ let board = [
             [], [], [],
             [], [], [],
         ];
+
+        
 let count = 0;
 let move = 'X';
 // console.log(combinations());
