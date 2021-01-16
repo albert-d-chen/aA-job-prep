@@ -5,26 +5,20 @@ function combinations () {
         [''], [''], [''],
         [''], [''], [''],
     ]
+    // let newBoard = [...board];
 
     for (let i = 0; i < board.length; i++) {
         let newBoard = [...board]
+        console.log(newBoard);
         newBoard[i][0] = 'X';
-        // console.log(newBoard);
-        count += fill(newBoard, count, 'X');
-        board = [
-            [''], [''], [''],
-            [''], [''], [''],
-            [''], [''], [''],
-        ]
+        count += fill(newBoard, count, 'O');
     }
     return count;
 }
 
 function fill(board, count, move) {
-    
-
     if (won(board, move) || full(board)) {
-        console.log(board);
+        // console.log(board);
         count++;
         return count;
     }
@@ -32,13 +26,16 @@ function fill(board, count, move) {
     for (let i = 0; i < board.length; i++) {
         if (board[i][0] === '') {
             let nextMove;
+            board[i][0] = move;
+            // let newBoard = [...board];
             if (move === 'X') {
                 nextMove = 'O';
             } else {
                 nextMove = 'X';
             }
-            board[i][0] = nextMove;
+            
             // console.log(nextMove);
+            // fill(board, count, nextMove);
             count += fill(board, count, nextMove);
         }
         
@@ -76,9 +73,9 @@ function won(board, move) {
 }
 
 let board = [
-            ['X'], [], [],
-            [], [], [],
-            [], [], [],
+            ['X'], ['X'], ['X'],
+            ['X'], ['X'], ['X'],
+            ['X'], ['X'], [''],
         ];
 
 
