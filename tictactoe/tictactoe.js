@@ -5,7 +5,7 @@ function combinations () {
         [''], [''], [''],
         [''], [''], [''],
     ]
-    // let newBoard = [...board];
+    let newBoard = [...board];
 
     for (let i = 0; i < board.length; i++) {
         let newBoard = [...board]
@@ -17,7 +17,7 @@ function combinations () {
 
 function fill(board, count, move) {
     if (won(board, move) || full(board)) {
-        // console.log(board);
+        console.log(board);
         count++;
         return count;
     }
