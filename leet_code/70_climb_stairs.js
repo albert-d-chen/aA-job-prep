@@ -11,3 +11,5 @@ var climbStairs = function(n) {
     
     return curr;
 };
+
+console.log(climbStairs(6));
