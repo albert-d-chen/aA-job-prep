@@ -24,6 +24,5 @@ var findJudge = function(N, trust) {
             return -1;
         }
     }
-    
     return judge;
 };
