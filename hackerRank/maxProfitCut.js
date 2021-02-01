@@ -42,7 +42,7 @@ function maxProfit(costPerCut, salePrice, lengths) {
     return Math.max(...arr);
 }
 
-let lengths = [26,103, 59];
+let lengths = [30,110, 59];
 let costPerCut = 1;
 let salePrice = 10;
 console.log(maxProfit(costPerCut, salePrice, lengths))
