@@ -35,5 +35,6 @@ var orangesRotting = function(grid) {
         time++;
         rottenOranges = queue;
     }
+    
     return freshOranges ? -1 : time;
 };
