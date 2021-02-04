@@ -7,6 +7,7 @@ function swap(array, idx1, idx2) {
 
 function bubbleSort(array) {
     let sorted = false;
+    let count = 0;
 
     while(!sorted) {
         sorted = true;
@@ -14,15 +15,11 @@ function bubbleSort(array) {
             if (array[i] > array[i + 1]){
                 swap(array, i, i + 1)
                 sorted = false;
+                count++
             }
         }
     }
-    return array;
+    return count;
 }
 
-// console.log(bubbleSort[8,22,7,9,31,19,5,13])
-
-module.exports = {
-    bubbleSort,
-    swap
-};
+console.log(bubbleSort([8,22,7,9,31,19,5,13]))
