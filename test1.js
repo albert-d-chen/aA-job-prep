@@ -36,7 +36,7 @@ function solution(N) {
         }
         return results;
     }
-console.log(results);
+// console.log(results);
     
     // let result = parseInt(copyN);
     // return result;
