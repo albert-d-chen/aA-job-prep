@@ -8,11 +8,9 @@ let array = ['8:00AM', '8:20PM', '9:00AM', '6:00AM', '6:00PM']
 
 const racer = function () {
     setImmediate(() => console.log('immd'));
-    setTimeout(() => console.log('time'), 0);
+    setTimeout(() => console.log('time'), 100);
     process.nextTick(() => console.log('tick'));
     console.log('current')
 }
 
-racer1();
-racer2();
-racer3();
+racer();
