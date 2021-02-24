@@ -15,6 +15,7 @@ function compareStrings(s1, s2) {
         }
         newS1 += s1[i];
     }
+    
     for (let i = 0; i < s2.length; i++) {
         let letter1 = s2[i];
 
