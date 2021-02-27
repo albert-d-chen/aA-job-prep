@@ -21,7 +21,7 @@ function remove(string) {
         }
         tracker = 1;
     }
-    // console.log(str);
+
     if (str.length === string.length) {
         return str;
     } else {
