@@ -5,10 +5,10 @@ function binary(arr, target) {
     if (arr.length === 0) return -1;
     if (mid === target) return midIdx;
 
-    if (mid < target) {
+    if (mid > target) {
         let left = arr.slice(0, midIdx);
         return binary(left, target);
-    } else if (mid > target) {
+    } else if (mid < target) {
         let right = arr.slice(midIdx + 1);
         let sortedRight = binary(right, target);
         if (sortedRight === -1) {
@@ -39,5 +39,5 @@ function binary2(arr, x) {
 }
 
 let arr = [1,3,5,7,8,9]
-let target =8;
-console.log(binary2(arr, target))
+let target =3;
+console.log(binary(arr, target))
