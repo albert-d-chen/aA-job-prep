@@ -10,6 +10,5 @@ function quicksort(arr) {
     return left.concat([pivot], right);
 }
 
-
 let arr = [1,5,4,3,2]
 console.log(quicksort(arr))
