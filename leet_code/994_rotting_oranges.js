@@ -4,7 +4,6 @@ var orangesRotting = function(grid) {
     let freshOranges = 0;
     let rottenOranges = [];
     
-    
     for (let i = 0; i < grid.length; i++) {
         for (let j = 0; j < grid[0].length; j++) {
             if (grid[i][j] === 1) {
