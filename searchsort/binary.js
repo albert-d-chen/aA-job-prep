@@ -17,7 +17,6 @@ function binary(arr, target) {
             return sortedRight + 1 + midIdx;
         }
     } 
-
 }
 
 function binary2(arr, x) {
