@@ -31,6 +31,5 @@ var sumZero = function(n) {
     return arr;
 };
 
-
 let n = 3;
 console.log(sumZero(n));
