@@ -52,6 +52,7 @@ function fileFinder(directories, targetFile) {
     //     } 
     // }
     // return false;
+    
     if (targetFile in directories) {
         return true;
     } else {
