@@ -52,7 +52,7 @@ function fileFinder(directories, targetFile) {
     //     } 
     // }
     // return false;
-    
+
     if (targetFile in directories) {
         return true;
     } else {
@@ -68,7 +68,7 @@ function fileFinder(directories, targetFile) {
 }
 
 
-// console.log(fileFinder(desktop, 'app_academy_logo.svg'));     // => true
+console.log(fileFinder(desktop, 'app_academy_logo.svg'));     // => true
 console.log(fileFinder(desktop, 'everlong.flac'));            // => true
-// console.log(fileFinder(desktop, 'sequoia.jpeg'));             // => false
+console.log(fileFinder(desktop, 'sequoia.jpeg'));             // => false
 
