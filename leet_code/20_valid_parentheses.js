@@ -28,3 +28,5 @@ var isValid = function (s) {
     }
     return true;
 };
+
+console.log(isValid('{([()])}'))
