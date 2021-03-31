@@ -21,7 +21,6 @@ var removeKdigits = function(num, k) {
     while (nums.length && nums[0] === '0') {
         nums.shift();
     }
-    
     if (nums.length) {
         return nums.join('');
     } else {
