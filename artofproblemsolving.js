@@ -23,4 +23,5 @@ let arr2 = [
 
 let target2 = 2;
 //LR
+
 console.log(solve(arr2, target2));
