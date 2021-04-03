@@ -13,6 +13,7 @@ let arr1 = [
 ];
 
 let target1 = 720;
+
 //LRLL
 
 let arr2 = [
@@ -22,6 +23,7 @@ let arr2 = [
 ]
 
 let target2 = 2;
+
 //LR
 
 console.log(solve(arr2, target2));
