@@ -1,18 +1,18 @@
-// function arrComb(arr) {
-//     let array = [];
-//     for (let i = 0; i < arr.length; i++) {
-//         let sub = [arr[i]];
-//         for (let j = i + 1; j < arr.length; j++) {
-//             sub.push(arr[j]);
-//             array.push(sub);
-//         }
+function arrComb(arr) {
+    let array = [];
+    for (let i = 0; i < arr.length; i++) {
+        let sub = [arr[i]];
+        for (let j = i + 1; j < arr.length; j++) {
+            sub.push(arr[j]);
+            array.push(sub);
+        }
         
-//     }
-//     return array;
-// }
+    }
+    return array;
+}
 
-// let arr = [1,2,3,4,5]
-// console.log(arrComb(arr));
+let arr = [1,2,3,4,5]
+console.log(arrComb(arr));
 
 
 function combinations(array) {
