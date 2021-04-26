@@ -22,4 +22,5 @@ function bubbleSort(array) {
     return count;
 }
 
+
 console.log(bubbleSort([8,22,7,9,31,19,5,13]))
